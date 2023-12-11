@@ -1,13 +1,21 @@
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background: #FFFFFF;
 }
 
+h1,h2,h3,h4,h5,h6,p {margin: 0;}
+ul, ol {list-style-type: none; margin: 0; padding: 0;}
 
-ul, ol {list-style-type: none;}
+.container {
+    width: 1158px;
+    padding-left: 15px; padding-right: 15px;
+    margin-left: auto; margin-right: auto;
+}
 
 .header-nav-logo {
+    margin-right: 76px;
     color: #4D5AE5;
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -16,16 +24,34 @@ ul, ol {list-style-type: none;}
         letter-spacing: 0.03em;
         text-transform: uppercase;
     text-decoration: none;
+    display: inline-flex;
+        align-items: center;
 }
 
 .header-logo-studio {
     color: #2E2F42;
 }
+.header .container {
+    display: flex;
+}
+.header-nav {
+    display: flex;
+    margin-right: auto;
+}
+.header-nav-list {
+    display: flex;
+    display: inline-flex;
+        align-items: flex-start;
 
-.header-nav-list-item {
-    background-color: #FFFFFF;
 }
 
+.header-nav-list-item {
+    margin-right: 40px;
+    background-color: #FFFFFF;
+}
+.header-nav-list-item:last-child {
+    margin-right: 0;
+}
 .header-nav-list-item-link {
     color: #2E2F42;
         font-family: Roboto;
@@ -33,14 +59,21 @@ ul, ol {list-style-type: none;}
         line-height: 1.5;
         letter-spacing: 0.02em;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 .header-nav-list .header-nav-list-item-link:hover,
 .header-nav-list .header-nav-list-item-link:focus {
     color: #404bbf;
 }
-
+.adres-list {
+    display: flex;
+}
 .adres {
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
 .adres-list .adres-contact:hover,
 .adres-list .adres-contact:focus {
@@ -48,19 +81,28 @@ ul, ol {list-style-type: none;}
 }
 
 .adres-contact {
-    color: #434455;
-        font-family: Roboto;
-        font-style: normal;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+        color: #434455;
+            font-family: Roboto;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            text-decoration: none;
 }
+.adres-item {
+    margin-right: 40px;
 
+}
+.adres-item:last-child {
+    margin-right: 0;
+}
 .hero {
     background: #2E2F42;
 }
 
 .hero-title {
+    width: 496px;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 48px;
     color: #FFF;
         text-align: center;
         font-family: Roboto;
@@ -68,6 +110,7 @@ ul, ol {list-style-type: none;}
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 0.02em;
+        padding-top: 188px;
 }
 .hero .hero-button:hover,
 .hero .hero-button:focus {
@@ -81,10 +124,23 @@ ul, ol {list-style-type: none;}
             line-height: 1.5;
             letter-spacing: 0.04em;
             cursor: pointer;
+            display: inline-flex;
+                padding: 16px 32px;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 4px;
+                margin-bottom: 188px;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .section-two {
     background: #FFF;
+}
+.section-two-list {
+    display: flex;
 }
 .section-two-item {
     background-color: #FFFFFF;
@@ -109,6 +165,9 @@ ul, ol {list-style-type: none;}
 .section-three {
     background: #F4F4FD;
 }
+.section-three-list {
+    display: flex;
+}
 .section-three-title {
     color: #2E2F42;
         text-align: center;
@@ -119,6 +178,8 @@ ul, ol {list-style-type: none;}
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-left: auto; margin-right: auto;
+        margin-bottom: 72px;
 }
 .section-three-item {
     background-color: #FFFFFF;
@@ -145,6 +206,12 @@ ul, ol {list-style-type: none;}
 .section-four {
     background: #FFF;
 }
+.section-four-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
 .section-four-title {
     color: #2E2F42;
         text-align: center;
@@ -155,9 +222,13 @@ ul, ol {list-style-type: none;}
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-left: auto; margin-right: auto;
+        margin-bottom: 72px;
 }
 .section-four-item {
     background-color: #FFFFFF;
+    width: calc((100% - 48px) /3);
+    border-bottom: 1px solid #E7E9FC;
 }
 .section-four-title-text {
     color: #2E2F42;
@@ -174,6 +245,7 @@ ul, ol {list-style-type: none;}
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        
 }
 
 .footer {
