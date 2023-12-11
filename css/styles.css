@@ -294,7 +294,7 @@ img {
 .section-four-item {
     background-color: #FFFFFF;
     width: calc((100% - 24px * 2) / 3);
-    border: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
     display: flex;
         padding-bottom: 32px;
         flex-direction: column;
@@ -310,6 +310,7 @@ img {
         align-items: flex-start;
         gap: 8px;
         align-self: stretch;
+        border: 1px solid #E7E9FC;
 }
 .section-four-title-text {
     color: #2E2F42;
@@ -335,7 +336,6 @@ img {
     padding: 100px 0;
 }
 .footer-logo {
-    display: inline-block;
     color: #4D5AE5;
         font-family: "Raleway", sans-serif;
         font-size: 18px;
@@ -345,7 +345,7 @@ img {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         text-decoration: none;
-        display: inline-flex;
+        display: inline-block;
             height: 24px;
             align-items: center;
             flex-shrink: 0;
