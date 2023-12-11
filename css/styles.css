@@ -311,6 +311,7 @@ img {
         gap: 8px;
         align-self: stretch;
         border: 1px solid #E7E9FC;
+        border-top: none;
 }
 .section-four-title-text {
     color: #2E2F42;
