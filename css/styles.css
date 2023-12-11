@@ -294,7 +294,7 @@ img {
 .section-four-item {
     background-color: #FFFFFF;
     width: calc((100% - 24px * 2) / 3);
-    border-bottom: 1px solid #E7E9FC;
+    border: 1px solid #E7E9FC;
     display: flex;
         padding-bottom: 32px;
         flex-direction: column;
@@ -304,7 +304,7 @@ img {
 }
 .container-card-four {
     display: flex;
-        padding: 0px 16px;
+        padding: 32px 16px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -319,6 +319,7 @@ img {
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 .section-four-text {
     color: #434455;
@@ -334,6 +335,7 @@ img {
     padding: 100px 0;
 }
 .footer-logo {
+    display: inline-block;
     color: #4D5AE5;
         font-family: "Raleway", sans-serif;
         font-size: 18px;
